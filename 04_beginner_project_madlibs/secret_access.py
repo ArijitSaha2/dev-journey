@@ -1,3 +1,4 @@
+import time
 logincount = 0
 
 username = input("Enter a name to create username: ")
@@ -17,6 +18,8 @@ while logincount < 3:
         print("Bruh both are invalid values -_-")
 
     elif nam == username and pas == password:
+        print("Authenticating, please wait.....")
+        time.sleep(5)
         print("Access Granted!!!")
         break
 
@@ -30,6 +33,9 @@ while logincount < 3:
 
 else:
     print("You ran out of attempts for this Session, Better luck next time")
+    time.sleep(2)
     print("Attempting to inject viruses and malware...")
+    time.sleep(4)
     print("successful")
+    time.sleep(2)
     print("Got access to multiple gmail acc, including spotify and epic games accounts")
