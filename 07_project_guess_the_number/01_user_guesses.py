@@ -15,9 +15,8 @@ def guess(x):
             print(f"It took you {count} tries to guess correctly")
             break
 
-        elif x!= random_number:
-            user = int(input("Try to Guess the number again!! = "))
-            x = user
+        else:
+            x = int(input("Wrong guess Please Guess the number again!! = "))
         
         count += 1
     
