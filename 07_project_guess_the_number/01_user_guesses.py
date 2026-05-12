@@ -1,22 +1,26 @@
-# Computer picks a number between 1 and 10 (hardcode it)
+# Computer picks a number between 1 and 10 (use random)
 # Ask user to keep guessing until correct
-# Tell them if their guess is too high or too low
 # Print how many attempts it took
+# Uses random.randint() to generate the number
+# while True loop runs until correct guess then breaks
 
+import random
 
-
-def guess(n = 7):
-    counts = 1
+def guess(x):
+    random_number = random.randint(1, 10)
+    count = 1
     while True:
-        user_guess = int(input("try to guess the number: "))
-        if user_guess == n:
-            print("Guess is Correct")
-            print(f"It took {counts} attempt to guess the number")
+        if x == random_number:
+            print(f"Correct Guess!!! = {random_number}")
+            print(f"It took you {count} tries to guess correctly")
             break
-        elif user_guess > n:
-            print("The number you picked is high")
-        elif user_guess < n:
-            print("The number you picked is low")
-        counts += 1
+
+        elif x!= random_number:
+            user = int(input("Try to Guess the number again!! = "))
+            x = user
         
-guess()
+        count += 1
+    
+
+user = int(input("Try to Guess the number = "))
+guess(user)
