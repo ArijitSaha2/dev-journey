@@ -84,11 +84,11 @@ False
 # y = -4
 # z = 5
 
-# result = round(x)
-# result = abs(y)
-# result = pow(4, 3)
-# result = max(x, y, z)
-# result = min(x, y, z)
+# result = round(x)     # round(x) - rounds to nearest whole number
+# result = abs(y)       # abs(y) - absolute value, distance from 0
+# result = pow(4, 3)    # pow(4,3)  - 4 to the power of 3 = 64
+# result = max(x, y, z) # max(x,y,z)- returns largest value
+# result = min(x, y, z) # min(x,y,z)- returns smallest value
 
 # print (result)
 
@@ -98,10 +98,10 @@ False
 import math
 
 x = 9.9
-# print(math.pi)
-# print(math.e)
-# result = math.sqrt(x)
-# result = math.ceil(x)
-# result = math.floor(x)
+# print(math.pi) # math.pi - value of pi
+# print(math.e)  # math.e - Euler's number is approximately 2.718 — it's a mathematical constant used in exponential growth calculations, logarithms, and compound interest. Similar to how math.pi is used in geometry, math.e is used in calculus and finance.
+# result = math.sqrt(x) # math.sqrt - square root
+# result = math.ceil(x) # math.ceil - rounds up
+# result = math.floor(x) # math.floor- rounds down
 
 # print(result)"""
