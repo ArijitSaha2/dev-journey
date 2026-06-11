@@ -19,7 +19,8 @@ print(transform_list([2, 3], lambda num: num ** 2))
 print(transform_list([2, 3], lambda num: num ** 3))
 
 
-
+# map() = applies a function to each item in a list/tuple/etc and returns the modified items
+# filter() = goes through a list/tuple/etc and returns only items where the condition is True
 nums_list = [2, 3, 4, 5, 6]
 print(list(map(lambda num: num ** 3, nums_list))) # map function
 
