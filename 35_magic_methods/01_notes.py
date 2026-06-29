@@ -34,6 +34,8 @@ class Book:
             return self.author
         elif key == "num_pages":
             return self.num_pages
+        else:
+            return f"Key '{key}' was not found"
         
     
 book1 = Book("The Hobbit", "J.R.R. Tolkien", 310)
@@ -48,3 +50,4 @@ print("Lion" in book3)
 print(book3['title'])
 print(book3['author'])
 print(book3['num_pages'])
+print(book3['audio'])
