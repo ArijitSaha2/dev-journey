@@ -1,4 +1,5 @@
-# python file detection
+# python file detection = Checking if a file or folder exists at a specified location.
+#                         The os module can also check whether the location is a file or a folder.
 
 # Relative file path = Location of a file/folder relative to the current working directory.
 # Example: "stuff/test.txt"
