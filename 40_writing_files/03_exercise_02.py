@@ -1,12 +1,12 @@
 # Exercise 2
 # Create a list of four programming languages.
-# Create a file called languages.txt using write mode.
+# Create a file called language.txt using write mode.
 # Write each language on a new line using a loop.
-# After writing is complete, print "languages.txt was created".
+# After writing is complete, print "language.txt was created".
 
 languages = ["Python", "Javascript", "Typescript", "C++"]
 
-file_path = "03_Exercise_02.txt"
+file_path = "language.txt"
 
 with open(file_path, 'w') as file:
     for language in languages:
