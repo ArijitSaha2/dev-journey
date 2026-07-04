@@ -9,63 +9,84 @@
 
 # -------------------- TXT FILE --------------------
 
-# .txt = A plain text file used to store simple readable text.
-
 employees = ["Eugene", "Squidwart", "Spongbob", "Patrick"]
-
+# List containing the text we want to write.
 
 file_path = "output.txt"
+# Name/path of the file to create.
 
 try:
-    with  open(file_path, "w") as file:
+    # Opens output.txt in write mode and closes it automatically when finished.
+    with open(file_path, "w") as file:
+
+        # Goes through each employee in the list.
         for employee in employees:
+
+            # Writes each employee name followed by a space.
             file.write(employee + " ")
+
         print(f"txt file '{file_path}' was created")
+
 except FileExistsError:
     print("That file already exists!")
 
 
 # -------------------- JSON FILE --------------------
 
-# JSON = A file format used to store structured data using key-value pairs.
-# Python's json module is used to work with JSON files.
-
 import json
+# Imports the module needed to work with JSON.
 
 employee = {
     "name": "Spongbob",
     "age": 30,
     "job": "cook"
 }
+# Python dictionary containing structured employee data.
 
 file_path = "output.json"
 
 try:
-    with  open(file_path, "w") as file:
+    with open(file_path, "w") as file:
+
+        # Converts the Python dictionary into JSON and writes it to the file.
+        # indent=4 formats the JSON neatly instead of writing everything on one line.
         json.dump(employee, file, indent=4)
+
         print(f"json file '{file_path}' was created")
+
 except FileExistsError:
     print("That file already exists!")
 
 
 # -------------------- CSV FILE --------------------
 
-# CSV = Comma-Separated Values.
-# Used to store table-like data in rows and columns.
 import csv
+# Imports the module needed to work with CSV files.
 
-employees = [["Name", "Age", "Job"],
-            ["Sponebob", 30, "Cook"],
-            ["Patrick", 37, "Umemployed"],
-            ["Sandy", 27, "Scientist"]]
+employees = [
+    ["Name", "Age", "Job"],       # Header row
+    ["Sponebob", 30, "Cook"],     # Data row
+    ["Patrick", 37, "Unemployed"],
+    ["Sandy", 27, "Scientist"]
+]
+# Nested list: every inner list represents one row.
 
 file_path = "output.csv"
 
 try:
-    with  open(file_path, "w", newline='') as file:
+    # newline='' prevents unwanted blank lines between CSV rows.
+    with open(file_path, "w", newline='') as file:
+
+        # Creates a CSV writer connected to the opened file.
         writer = csv.writer(file)
+
+        # Goes through each inner list (row).
         for row in employees:
+
+            # Writes one inner list as one CSV row.
             writer.writerow(row)
+
         print(f"csv file '{file_path}' was created")
+
 except FileExistsError:
     print("That file already exists!")
