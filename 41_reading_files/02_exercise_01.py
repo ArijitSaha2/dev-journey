@@ -11,3 +11,11 @@ with open(file_path, "r") as file:
     content = file.read()
     print(content)
 
+# for .json
+import json 
+
+file_path = "player.json"
+
+with open(file_path, "r") as file:
+    content = json.load(file)
+    print(content)
