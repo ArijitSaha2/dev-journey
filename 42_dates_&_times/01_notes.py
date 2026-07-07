@@ -1,4 +1,5 @@
 import datetime
+
 date = datetime.date(2026, 1, 1)
 today = datetime.date.today()
 
