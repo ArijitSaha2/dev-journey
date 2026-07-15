@@ -56,19 +56,6 @@ It documents the first phase of my development journey, focused on building a st
 
 ---
 
-## 📂 Repository Structure
-
-```text
-01_Variables
-02_Type_Casting
-03_User_Input
-...
-```
-
-Each folder contains notes, exercises, revision work, or mini projects completed while learning Python.
-
----
-
 ## 🎯 Purpose
 
 This repository serves as a record of my learning process and progress. As I continue learning new technologies, more topics and projects will be added.
