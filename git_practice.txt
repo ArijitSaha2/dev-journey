@@ -1,1 +1,16 @@
-A file for practicing git and github.
+Git Practice File
+
+This file is used to practice Git and GitHub.
+
+I will use it to practice:
+- Tracking changes
+- Staging specific changes
+- Committing changes
+- Pushing changes to GitHub
+- Pulling changes from GitHub
+- Viewing commit history
+- Comparing changes
+- Working with branches
+- Merging branches
+
+The contents of this file will change throughout my Git practice.
