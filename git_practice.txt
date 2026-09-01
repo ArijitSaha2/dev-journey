@@ -1,16 +1,33 @@
 Git Practice File
 
-This file is used to practice Git and GitHub.
+GIT NOTES
 
-I will use it to practice:
-- Tracking changes
-- Staging specific changes
-- Committing changes
-- Pushing changes to GitHub
-- Pulling changes from GitHub
-- Viewing commit history
-- Comparing changes
-- Working with branches
-- Merging branches
+git status
+Shows the current state of the working directory and staging area.
+
+git add <file>
+Stages a file for the next commit.
+
+git commit -m "message"
+Creates a commit containing the staged changes.
+-m stands for message.
+
+git push
+Uploads local commits to the remote GitHub repository.
+
+git pull
+Downloads changes from the remote repository and updates the local branch.
+
+git fetch
+Downloads information about changes from the remote repository without applying them.
+
+git diff
+Shows changes that have been made but are not staged.
+
+git restore <file>
+Discards unstaged changes and restores the file to its last committed version.
+
+git restore --staged <file>
+Removes a file from staging while keeping its changes.
 
 The contents of this file will change throughout my Git practice.
