@@ -34,4 +34,13 @@ git add .
 Stages all changed and untracked files in the current repository for the next commit.
 It does not re-commit unchanged files.
 
+git log
+Shows the commit history of the repository.
+
+Related Git log information:
+- HEAD → Shows the branch/commit you are currently on.
+- main → The local main branch.
+- origin/main → The main branch of the remote GitHub repository.
+- origin/HEAD → Points to the default branch of the remote repository.
+
 The contents of this file will change throughout my Git practice.
