@@ -30,4 +30,8 @@ Discards unstaged changes and restores the file to its last committed version.
 git restore --staged <file>
 Removes a file from staging while keeping its changes.
 
+git add .
+Stages all changed and untracked files in the current repository for the next commit.
+It does not re-commit unchanged files.
+
 The contents of this file will change throughout my Git practice.
