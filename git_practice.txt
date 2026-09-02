@@ -43,4 +43,18 @@ Related Git log information:
 - origin/main → The main branch of the remote GitHub repository.
 - origin/HEAD → Points to the default branch of the remote repository.
 
+GIT BRANCHES
+
+A branch is a separate line of development.
+Creating a branch does not create a duplicate folder or project.
+
+git branch
+Lists the branches in the repository.
+
+git switch -c <branch>
+Creates a new branch and switches to it.
+
+git switch <branch>
+Switches to an existing branch.
+
 The contents of this file will change throughout my Git practice.
