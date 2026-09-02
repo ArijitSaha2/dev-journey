@@ -37,6 +37,12 @@ It does not re-commit unchanged files.
 git log
 Shows the commit history of the repository.
 
+git log --oneline --decorate -3
+Shows the latest 3 commits in a shorter format.
+--oneline → Shows each commit on one line.
+--decorate → Shows branch/HEAD information next to commits.
+-3 → Shows the latest 3 commits.
+
 Related Git log information:
 - HEAD → Shows the branch/commit you are currently on.
 - main → The local main branch.
