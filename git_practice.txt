@@ -44,3 +44,4 @@ Related Git log information:
 - origin/HEAD → Points to the default branch of the remote repository.
 
 The contents of this file will change throughout my Git practice.
+This change exists only on the practice branch.
