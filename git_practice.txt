@@ -57,6 +57,12 @@ Creating a branch does not create a duplicate folder or project.
 git branch
 Lists the branches in the repository.
 
+Comparing branches:
+git diff main..practice
+Shows the differences in file contents between the main and practice branches.
+git log main..practice
+Shows commits that exist on practice but not on main.
+
 git switch -c <branch>
 Creates a new branch and switches to it.
 
