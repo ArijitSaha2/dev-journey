@@ -14,9 +14,16 @@ Creates a commit containing the staged changes.
 
 git push
 Uploads local commits to the remote GitHub repository.
+Working: push → local → GitHub
+
+Upstream branches:
+- An upstream branch is the remote branch that a local branch tracks.
+- main → tracks origin/main.
+- practice → tracks origin/practice.
 
 git pull
-Downloads changes from the remote repository and updates the local branch.
+Downloads changes from the remote repository and updates the current local branch using its upstream branch.
+Working: pull → GitHub → local
 
 git fetch
 Downloads information about changes from the remote repository without applying them.
@@ -45,8 +52,6 @@ Shows the latest 3 commits in a shorter format.
 
 Related Git log information:
 - HEAD → Shows the branch/commit you are currently on.
-- main → The local main branch.
-- origin/main → The main branch of the remote GitHub repository.
 - origin/HEAD → Points to the default branch of the remote repository.
 
 GIT BRANCHES
