@@ -87,6 +87,63 @@ Pushes a new local branch to GitHub and sets it as the upstream branch.
 
 After an upstream branch is set, git push can be used normally.
 
+GIT PULL REQUESTS
+
+Pull Request (PR):
+A request to merge changes from one branch into another.
+A PR does not merge the branches automatically.
+
+Example:
+practice → main
+
+Create pull request:
+Creates a normal PR that is ready for review.
+
+Draft pull request:
+Creates a PR that is not ready to be merged yet.
+It can later be marked as ready for review.
+
+MERGING BRANCHES
+
+git merge <branch>
+Merges the specified branch into the current branch.
+
+Example:
+While on practice:
+git merge main
+
+This merges main into practice.
+It does not merge practice into main.
+
+Merge conflicts:
+A merge conflict happens when Git cannot automatically combine changes from different branches, usually because both branches modified the same part of a file.
+
+During a conflict:
+<<<<<<< HEAD → Current branch's changes.
+======= → Separates the two versions.
+>>>>>>> main → Incoming branch's changes.
+
+Conflict resolution:
+- Choose the changes to keep or combine them manually.
+- Remove the conflict markers.
+- Save the file.
+- git add <file> → Marks the conflict as resolved.
+- git commit → Completes the merge and creates a merge commit.
+
+git merge --abort
+Cancels the current merge and returns the branch to its state before the merge started.
+
+A merge commit records that two branches were combined.
+
+After resolving and committing a merge locally:
+git push
+Uploads the updated branch and its merge commit to GitHub.
+
+If a branch is ahead of and behind another branch:
+- Ahead → it has commits the other branch does not have.
+- Behind → the other branch has commits this branch does not have.
+- This means the branches have diverged.
+
 GitHub can show "Compare & pull request" when a branch contains changes that are not in the target branch.
 
 The contents of this file will change throughout my Git practice.
