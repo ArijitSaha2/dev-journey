@@ -14,9 +14,16 @@ Creates a commit containing the staged changes.
 
 git push
 Uploads local commits to the remote GitHub repository.
+Working: push → local → GitHub
+
+Upstream branches:
+- An upstream branch is the remote branch that a local branch tracks.
+- main → tracks origin/main.
+- practice → tracks origin/practice.
 
 git pull
-Downloads changes from the remote repository and updates the local branch.
+Downloads changes from the remote repository and updates the current local branch using its upstream branch.
+Working: pull → GitHub → local
 
 git fetch
 Downloads information about changes from the remote repository without applying them.
@@ -37,10 +44,14 @@ It does not re-commit unchanged files.
 git log
 Shows the commit history of the repository.
 
+git log --oneline --decorate -3
+Shows the latest 3 commits in a shorter format.
+--oneline → Shows each commit on one line.
+--decorate → Shows branch/HEAD information next to commits.
+-3 → Shows the latest 3 commits.
+
 Related Git log information:
 - HEAD → Shows the branch/commit you are currently on.
-- main → The local main branch.
-- origin/main → The main branch of the remote GitHub repository.
 - origin/HEAD → Points to the default branch of the remote repository.
 
 GIT BRANCHES
@@ -51,10 +62,89 @@ Creating a branch does not create a duplicate folder or project.
 git branch
 Lists the branches in the repository.
 
+Comparing branches:
+git diff main..practice
+Shows the differences in file contents between the main and practice branches.
+git log main..practice
+Shows commits that exist on practice but not on main.
+
 git switch -c <branch>
 Creates a new branch and switches to it.
 
 git switch <branch>
 Switches to an existing branch.
 
+Changes and commits made on one branch do not automatically appear on another branch.
+
+Local and remote branches:
+- main → The local main branch.
+- origin/main → The main branch on GitHub.
+- practice → The local practice branch.
+- origin/practice → The practice branch on GitHub.
+
+git push -u origin <branch>
+Pushes a new local branch to GitHub and sets it as the upstream branch.
+
+After an upstream branch is set, git push can be used normally.
+
+GIT PULL REQUESTS
+
+Pull Request (PR):
+A request to merge changes from one branch into another.
+A PR does not merge the branches automatically.
+
+Example:
+practice → main
+
+Create pull request:
+Creates a normal PR that is ready for review.
+
+Draft pull request:
+Creates a PR that is not ready to be merged yet.
+It can later be marked as ready for review.
+
+MERGING BRANCHES
+
+git merge <branch>
+Merges the specified branch into the current branch.
+
+Example:
+While on practice:
+git merge main
+
+This merges main into practice.
+It does not merge practice into main.
+
+Merge conflicts:
+A merge conflict happens when Git cannot automatically combine changes from different branches, usually because both branches modified the same part of a file.
+
+During a conflict:
+<<<<<<< HEAD → Current branch's changes.
+======= → Separates the two versions.
+>>>>>>> main → Incoming branch's changes.
+
+Conflict resolution:
+- Choose the changes to keep or combine them manually.
+- Remove the conflict markers.
+- Save the file.
+- git add <file> → Marks the conflict as resolved.
+- git commit → Completes the merge and creates a merge commit.
+
+git merge --abort
+Cancels the current merge and returns the branch to its state before the merge started.
+
+A merge commit records that two branches were combined.
+
+After resolving and committing a merge locally:
+git push
+Uploads the updated branch and its merge commit to GitHub.
+
+If a branch is ahead of and behind another branch:
+- Ahead → it has commits the other branch does not have.
+- Behind → the other branch has commits this branch does not have.
+- This means the branches have diverged.
+
+GitHub can show "Compare & pull request" when a branch contains changes that are not in the target branch.
+
 The contents of this file will change throughout my Git practice.
+This change exists only on the practice branch.
