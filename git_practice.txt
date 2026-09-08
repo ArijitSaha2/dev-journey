@@ -54,6 +54,9 @@ Related Git log information:
 - HEAD → Shows the branch/commit you are currently on.
 - origin/HEAD → Points to the default branch of the remote repository.
 
+git show <commit>
+Shows the details and changes made by a specific commit.
+
 GIT BRANCHES
 
 A branch is a separate line of development.
