@@ -2,6 +2,8 @@ Git Practice File
 
 GIT NOTES
 
+1) BASIC GIT WORKFLOW
+
 git status
 Shows the current state of the working directory and staging area.
 
@@ -11,22 +13,6 @@ Stages a file for the next commit.
 git commit -m "message"
 Creates a commit containing the staged changes.
 -m stands for message.
-
-git push
-Uploads local commits to the remote GitHub repository.
-Working: push → local → GitHub
-
-Upstream branches:
-- An upstream branch is the remote branch that a local branch tracks.
-- Example: main → tracks origin/main.
-- Example: practice → tracks origin/practice.
-
-git pull
-Downloads changes from the remote repository and updates the current local branch using its upstream branch.
-Working: pull → GitHub → local
-
-git fetch
-Downloads information about changes from the remote repository without applying them.
 
 git diff
 Shows changes that have been made but are not staged.
@@ -41,6 +27,19 @@ git add .
 Stages all changed and untracked files in the current repository for the next commit.
 It does not re-commit unchanged files.
 
+git push
+Uploads local commits to the remote GitHub repository.
+Working: push → local → GitHub
+
+git fetch
+Downloads information about changes from the remote repository without applying them.
+
+git pull
+Downloads changes from the remote repository and updates the current local branch using its upstream branch.
+Working: pull → GitHub → local
+
+2) .gitignore
+
 .gitignore
 
 A .gitignore file tells Git which files and directories should not be tracked.
@@ -51,6 +50,8 @@ __pycache__/
 .env
 
 .gitignore can ignore files, file patterns, and directories.
+
+3) GIT HISTORY
 
 git log
 Shows the commit history of the repository.
@@ -68,19 +69,13 @@ Related Git log information:
 git show <commit>
 Shows the details and changes made by a specific commit.
 
-GIT BRANCHES
+4) GIT BRANCHES
 
 A branch is a separate line of development.
 Creating a branch does not create a duplicate folder or project.
 
 git branch
 Lists the branches in the repository.
-
-Comparing branches:
-git diff main..practice
-Shows the differences in file contents between the main and practice branches.
-git log main..practice
-Shows commits that exist on practice but not on main.
 
 git switch -c <branch>
 Creates a new branch and switches to it.
@@ -96,6 +91,11 @@ Local and remote branches:
 - practice → The local practice branch.
 - origin/practice → A local remote-tracking reference for the remote (GitHub) practice branch.
 
+Upstream branches:
+- An upstream branch is the remote branch that a local branch tracks.
+- Example: main → tracks origin/main.
+- Example: practice → tracks origin/practice.
+
 git push -u origin <branch>
 git push --set-upstream origin <branch>
 
@@ -104,7 +104,13 @@ Pushes a new local branch to GitHub and sets it as the upstream branch.
 
 After an upstream branch is set, git push can be used normally.
 
-GIT PULL REQUESTS
+Comparing branches:
+git diff main..practice
+Shows the differences in file contents between the main and practice branches.
+git log main..practice
+Shows commits that exist on practice but not on main.
+
+5) GIT PULL REQUESTS
 
 Pull Request (PR):
 A request to merge changes from one branch into another.
@@ -120,7 +126,7 @@ Draft pull request:
 Creates a PR that is not ready to be merged yet.
 It can later be marked as ready for review.
 
-MERGING BRANCHES
+6) MERGING BRANCHES
 
 git merge <branch>
 Merges the specified branch into the current branch.
@@ -163,7 +169,7 @@ If a branch is ahead of and behind another branch:
 
 GitHub can show "Compare & pull request" when a branch contains changes that are not in the target branch.
 
-BRANCH CLEANUP
+7) BRANCH CLEANUP
 
 git branch -d <branch>
 Deletes a local branch safely.
