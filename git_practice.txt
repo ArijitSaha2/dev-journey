@@ -97,7 +97,10 @@ Local and remote branches:
 - origin/practice → The practice branch on GitHub.
 
 git push -u origin <branch>
+git push --set-upstream origin <branch>
+
 Pushes a new local branch to GitHub and sets it as the upstream branch.
+-u is the short form of --set-upstream.
 
 After an upstream branch is set, git push can be used normally.
 
