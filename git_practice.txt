@@ -18,8 +18,8 @@ Working: push → local → GitHub
 
 Upstream branches:
 - An upstream branch is the remote branch that a local branch tracks.
-- main → tracks origin/main.
-- practice → tracks origin/practice.
+- Example: main → tracks origin/main.
+- Example: practice → tracks origin/practice.
 
 git pull
 Downloads changes from the remote repository and updates the current local branch using its upstream branch.
@@ -92,9 +92,9 @@ Changes and commits made on one branch do not automatically appear on another br
 
 Local and remote branches:
 - main → The local main branch.
-- origin/main → The main branch on GitHub.
+- origin/main → A local remote-tracking reference for the remote (GitHub) main branch.
 - practice → The local practice branch.
-- origin/practice → The practice branch on GitHub.
+- origin/practice → A local remote-tracking reference for the remote (GitHub) practice branch.
 
 git push -u origin <branch>
 git push --set-upstream origin <branch>
@@ -163,5 +163,19 @@ If a branch is ahead of and behind another branch:
 
 GitHub can show "Compare & pull request" when a branch contains changes that are not in the target branch.
 
+BRANCH CLEANUP
+
+git branch -d <branch>
+Deletes a local branch safely.
+-d safely deletes the branch when its commits have been merged into another branch.
+
+git push origin --delete <branch>
+Deletes the branch from the remote (GitHub).
+
+Deleting a branch does not delete commits that are already part of another branch's history, such as main.
+
+Local branch and remote branch are separate:
+- git branch -d <branch> → deletes local branch.
+- git push origin --delete <branch> → deletes remote/GitHub branch.
+
 The contents of this file will change throughout my Git practice.
-This change exists only on the practice branch.
