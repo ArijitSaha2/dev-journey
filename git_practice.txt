@@ -41,6 +41,17 @@ git add .
 Stages all changed and untracked files in the current repository for the next commit.
 It does not re-commit unchanged files.
 
+.gitignore
+
+A .gitignore file tells Git which files and directories should not be tracked.
+
+Common Python entries:
+__pycache__/
+*.pyc
+.env
+
+.gitignore can ignore files, file patterns, and directories.
+
 git log
 Shows the commit history of the repository.
 
