@@ -219,3 +219,14 @@ Important:
 Do not casually use reset on commits that have already been pushed to a shared remote branch because it rewrites history.
 
 The contents of this file will change throughout my Git practice.
+
+9) GIT STASH NOTES
+
+git stash
+Temporarily saves uncommitted changes so the working tree can be clean.
+
+git stash pop
+Restores the most recently stashed changes.
+
+git stash list
+Lists saved stashes.
