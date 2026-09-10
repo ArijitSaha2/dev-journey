@@ -188,4 +188,36 @@ Local branch and remote branch are separate:
 - git branch -d <branch> → deletes local branch.
 - git push origin --delete <branch> → deletes remote/GitHub branch.
 
+8) UNDOING COMMITS
+
+git revert <commit>
+Creates a new commit that undoes the changes made by an older commit.
+The old commit stays in the history.
+
+Example:
+git revert 586642c
+
+Revert is useful when you want to undo a committed change while keeping the history intact.
+
+git reset <commit>
+Moves the current branch back to an earlier commit.
+
+git reset --soft <commit>
+Moves the branch back while keeping the changes from the later commits staged.
+
+git reset --mixed <commit>
+Moves the branch back while keeping the changes from the later commits unstaged.
+This is the default behavior of git reset.
+
+git reset --hard <commit>
+Moves the branch back and throws away the changes from the later commits.
+
+Reset can be used to move back multiple commits, including all the way to an earlier commit.
+
+Important:
+- revert → keeps the old commit and creates a new commit to undo it.
+- reset → moves the branch back and removes the later commits from the branch's current history.
+
+Do not casually use reset on commits that have already been pushed to a shared remote branch because it rewrites history.
+
 The contents of this file will change throughout my Git practice.
