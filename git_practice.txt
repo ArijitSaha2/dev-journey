@@ -77,6 +77,9 @@ Creating a branch does not create a duplicate folder or project.
 git branch
 Lists the branches in the repository.
 
+git branch -r
+Lists the remote-tracking branches.
+
 git switch -c <branch>
 Creates a new branch and switches to it.
 
