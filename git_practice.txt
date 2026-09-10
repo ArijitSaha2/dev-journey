@@ -189,4 +189,3 @@ Local branch and remote branch are separate:
 - git push origin --delete <branch> → deletes remote/GitHub branch.
 
 The contents of this file will change throughout my Git practice.
-THIS WAS A MISTAKE
