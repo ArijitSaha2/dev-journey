@@ -199,15 +199,13 @@ git revert 586642c
 
 Revert is useful when you want to undo a committed change while keeping the history intact.
 
-git reset <commit>
+git reset <commit> or git reset --mixed <commit>
 Moves the current branch back to an earlier commit.
+Moves the branch back while keeping the changes from the later commits unstaged.
+This is the default behavior of git reset.
 
 git reset --soft <commit>
 Moves the branch back while keeping the changes from the later commits staged.
-
-git reset --mixed <commit>
-Moves the branch back while keeping the changes from the later commits unstaged.
-This is the default behavior of git reset.
 
 git reset --hard <commit>
 Moves the branch back and throws away the changes from the later commits.
