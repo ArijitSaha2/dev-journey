@@ -93,6 +93,7 @@ Local and remote branches:
 - origin/main → A local remote-tracking reference for the remote (GitHub) main branch.
 - practice → The local practice branch.
 - origin/practice → A local remote-tracking reference for the remote (GitHub) practice branch.
+- origin/HEAD → Shows which branch is the default branch on GitHub.
 
 Upstream branches:
 - An upstream branch is the remote branch that a local branch tracks.
