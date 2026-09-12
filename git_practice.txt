@@ -271,8 +271,21 @@ v2.0.0
 
 A tag marks an exact commit as a specific version.
 
+Creating and pushing a tag:
+
+git tag v1.0.0
+Creates a tag named v1.0.0 on the current commit.
+
+git push origin v1.0.0
+Pushes the v1.0.0 tag to GitHub.
+
+After pushing the tag, it can be selected when creating a GitHub Release.
+
 Release:
 A published version of the project on GitHub based on a tag.
+To create a release, go to the GitHub repository and create/publish the release using the tag.
+Tagging alone does not create a GitHub Release.
+
 A release can include release notes explaining what changed.
 
 Tag = marks the exact commit/version.
