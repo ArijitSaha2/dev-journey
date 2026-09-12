@@ -290,4 +290,31 @@ A release can include release notes explaining what changed.
 
 Tag = marks the exact commit/version.
 Release = publishes that version on GitHub with information about it.
-Another change but on main
+
+12) GIT REBASE
+
+git rebase <branch>
+
+Replays the current branch's commits on top of another branch.
+
+Example:
+While on practice:
+git rebase main
+
+This puts the practice branch's commits on top of the latest main commits.
+
+Rebase is mainly used to keep the commit history clean and linear.
+
+Merge = combines branch histories and can create a merge commit.
+Rebase = replays commits on top of another branch to create a cleaner linear history.
+
+Rebase can cause conflicts if both branches changed the same part of a file.
+Resolve the conflict, then:
+git add <file>
+git rebase --continue
+
+git rebase --abort
+Cancels the rebase and returns the branch to its state before the rebase started.
+
+Important:
+Rebase rewrites commit history, so don't casually rebase commits that have already been pushed to a shared branch.
