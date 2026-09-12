@@ -230,3 +230,50 @@ Restores the most recently stashed changes.
 
 git stash list
 Lists saved stashes.
+
+10) GITHUB ISSUES & MILESTONES
+
+GitHub Issues:
+A place to record problems, bugs, tasks, or things that need to be worked on in a repository.
+
+Labels:
+Help categorize Issues and PRs.
+Examples:
+bug
+feature
+documentation
+
+Issue = an individual piece of work or problem.
+
+Milestone:
+A larger goal that can contain multiple Issues and PRs.
+It can be used for fixing problems, adding a new system, overhauling an existing system, or preparing a release.
+
+Example:
+Milestone: Authentication System v2
+- Issue: Add JWT authentication
+- Issue: Add refresh tokens
+- Issue: Add logout
+- Issue: Write authentication tests
+
+Issue = individual piece of work.
+Milestone = larger goal made up of multiple pieces of work.
+
+11) GITHUB TAGS & RELEASES
+
+Tag:
+A name attached to a specific commit to mark a version of the project.
+
+Examples:
+v1.0.0
+v1.1.0
+v2.0.0
+
+A tag marks an exact commit as a specific version.
+
+Release:
+A published version of the project on GitHub based on a tag.
+A release can include release notes explaining what changed.
+
+Tag = marks the exact commit/version.
+Release = publishes that version on GitHub with information about it.
