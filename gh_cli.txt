@@ -1,0 +1,25 @@
+GitHub CLI Notes
+
+1) GITHUB CLI BASICS
+
+GitHub CLI (`gh`):
+A command-line tool that lets us use GitHub features from the terminal instead of opening the GitHub website.
+
+Git and GitHub CLI are separate tools:
+- Git → Works with the local repository, commits, branches, merging, rebasing, pushing, pulling, etc.
+- GitHub CLI (`gh`) → Lets us interact with GitHub features from the terminal.
+
+2) AUTHENTICATION
+
+gh auth login
+Logs the GitHub CLI into a GitHub account.
+
+gh auth status
+Shows whether GitHub CLI is logged in and which GitHub account is currently being used.
+
+3) REPOSITORY
+
+gh repo view
+Shows information about the GitHub repository from the terminal, such as its name, description, and GitHub page.
+
+It does not display all files in the repository.
