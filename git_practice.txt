@@ -25,7 +25,6 @@ Removes a file from staging while keeping its changes.
 
 git add .
 Stages all changed and untracked files in the current repository for the next commit.
-It does not re-commit unchanged files.
 
 git push
 Uploads local commits to the remote GitHub repository.
@@ -38,7 +37,19 @@ git pull
 Downloads changes from the remote repository and updates the current local branch using its upstream branch.
 Working: pull → GitHub → local
 
-2) .gitignore
+2) GIT COMMIT AMEND
+
+git commit --amend -m "message"
+Replaces the most recent commit with a new version.
+
+It can be used to:
+- Change the most recent commit message.
+- Add forgotten changes to the most recent commit.
+
+Important:
+Amend rewrites the most recent commit, so be careful when the commit has already been pushed or shared.
+
+3) .gitignore
 
 .gitignore
 
@@ -51,7 +62,7 @@ __pycache__/
 
 .gitignore can ignore files, file patterns, and directories.
 
-3) GIT HISTORY
+4) GIT HISTORY
 
 git log
 Shows the commit history of the repository.
@@ -69,7 +80,7 @@ Related Git log information:
 git show <commit>
 Shows the details and changes made by a specific commit.
 
-4) GIT BRANCHES
+5) GIT BRANCHES
 
 A branch is a separate line of development.
 Creating a branch does not create a duplicate folder or project.
@@ -114,7 +125,7 @@ Shows the differences in file contents between the main and practice branches.
 git log main..practice
 Shows commits that exist on practice but not on main.
 
-5) GIT PULL REQUESTS
+6) GIT PULL REQUESTS
 
 Pull Request (PR):
 A request to merge changes from one branch into another.
@@ -130,7 +141,7 @@ Draft pull request:
 Creates a PR that is not ready to be merged yet.
 It can later be marked as ready for review.
 
-6) MERGING BRANCHES
+7) MERGING BRANCHES
 
 git merge <branch>
 Merges the specified branch into the current branch.
@@ -173,7 +184,7 @@ If a branch is ahead of and behind another branch:
 
 GitHub can show "Compare & pull request" when a branch contains changes that are not in the target branch.
 
-7) BRANCH CLEANUP
+8) BRANCH CLEANUP
 
 git branch -d <branch>
 Deletes a local branch safely.
@@ -188,7 +199,7 @@ Local branch and remote branch are separate:
 - git branch -d <branch> → deletes local branch.
 - git push origin --delete <branch> → deletes remote/GitHub branch.
 
-8) UNDOING COMMITS
+9) UNDOING COMMITS
 
 git revert <commit>
 Creates a new commit that undoes the changes made by an older commit.
@@ -220,7 +231,7 @@ Do not casually use reset on commits that have already been pushed to a shared r
 
 The contents of this file will change throughout my Git practice.
 
-9) GIT STASH NOTES
+10) GIT STASH NOTES
 
 git stash
 Temporarily saves uncommitted changes so the working tree can be clean.
@@ -231,7 +242,7 @@ Restores the most recently stashed changes.
 git stash list
 Lists saved stashes.
 
-10) GITHUB ISSUES & MILESTONES
+11) GITHUB ISSUES & MILESTONES
 
 GitHub Issues:
 A place to record problems, bugs, tasks, or things that need to be worked on in a repository.
@@ -259,7 +270,7 @@ Milestone: Authentication System v2
 Issue = individual piece of work.
 Milestone = larger goal made up of multiple pieces of work.
 
-11) GITHUB TAGS & RELEASES
+12) GITHUB TAGS & RELEASES
 
 Tag:
 A name attached to a specific commit to mark a version of the project.
@@ -291,7 +302,7 @@ A release can include release notes explaining what changed.
 Tag = marks the exact commit/version.
 Release = publishes that version on GitHub with information about it.
 
-12) GIT REBASE
+13) GIT REBASE
 
 git rebase <branch>
 
