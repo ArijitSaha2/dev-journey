@@ -23,3 +23,26 @@ gh repo view
 Shows information about the GitHub repository from the terminal, such as its name, description, and GitHub page.
 
 It does not display all files in the repository.
+
+4) GITHUB ISSUES
+
+gh issue list
+Lists the open Issues in the current GitHub repository.
+
+gh issue create
+Creates a new GitHub Issue from the terminal.
+
+gh issue view <issue>
+Shows the details of a specific Issue.
+
+gh issue close <issue>
+Closes a specific Issue.
+
+Example:
+gh issue close 3
+
+Issue workflow:
+gh issue list → view Issues
+gh issue create → create an Issue
+gh issue view <issue> → view an Issue
+gh issue close <issue> → close an Issue
