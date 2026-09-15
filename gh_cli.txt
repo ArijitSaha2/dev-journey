@@ -46,3 +46,11 @@ gh issue list → view Issues
 gh issue create → create an Issue
 gh issue view <issue> → view an Issue
 gh issue close <issue> → close an Issue
+
+5) GITHUB PULL REQUESTS
+
+gh pr list
+Lists the open Pull Requests in the current GitHub repository.
+
+gh pr create
+Creates a new Pull Request from the terminal.
