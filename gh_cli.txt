@@ -54,3 +54,6 @@ Lists the open Pull Requests in the current GitHub repository.
 
 gh pr create
 Creates a new Pull Request from the terminal.
+
+gh pr view <pr>
+Shows the details of a specific Pull Request.
