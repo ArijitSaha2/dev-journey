@@ -57,3 +57,11 @@ Creates a new Pull Request from the terminal.
 
 gh pr view <pr>
 Shows the details of a specific Pull Request.
+
+gh pr status
+Shows the status of Pull Requests relevant to you in the current GitHub repository.
+
+It can show:
+- Pull Requests associated with the current branch.
+- Pull Requests created by you.
+- Pull Requests waiting for your review.
