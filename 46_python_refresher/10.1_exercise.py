@@ -1,4 +1,4 @@
-# Exercise 10.1
+# Exercise 10.1(Previous version)
 # Filter out scores below 60 and arrange the remaining scores in descending order.
 # scores = [45, 72, 91, 38, 64, 55, 83, 29]
 # Don't use sorted() or .sort().
