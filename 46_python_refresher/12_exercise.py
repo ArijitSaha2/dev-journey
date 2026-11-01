@@ -1,4 +1,4 @@
-# Exercise 12A — Passed Students
+# Exercise 12 — Passed Students
 # Given this dictionary:
 # scores = {    "Alex": 85,    "John": 42,    "Sarah": 91,    "Mike": 58,    "Emma": 73}
 
