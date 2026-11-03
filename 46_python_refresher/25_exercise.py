@@ -19,7 +19,7 @@ def sum_of_elements(numbers):
 
 print(sum_of_elements(numbers = [10, 20, 5, 15, 30]))
 
-
+# Direct approach without writing extra code.
 numbers = [10, 20, 5, 15, 30]
 total = sum(numbers)
 print(total)
