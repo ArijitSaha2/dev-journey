@@ -18,7 +18,7 @@ def logical_operator(is_logged_in, is_verified, is_admin):
     if is_logged_in == True and is_verified == True:
         print("USER IS LOGGED IN AND VERIFIED")
     if is_logged_in == True or is_admin == True:
-        print("USER IS LOGGED IN AND IS AN ADMIN")
+        print("USER IS LOGGED IN or IS AN ADMIN")
     if not is_verified: 
         print("USER IS NOT VERIFIED")
 
