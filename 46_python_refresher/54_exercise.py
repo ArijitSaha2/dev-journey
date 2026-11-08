@@ -37,4 +37,4 @@ for y in range(8):
     number = int(input("Enter number: "))
     l.append(number)
 
-func(l)
+func(l) 
