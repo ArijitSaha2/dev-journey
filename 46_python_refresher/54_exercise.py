@@ -21,7 +21,7 @@
 
 def func(numbers):
 
-    even = [even for even in numbers if even % 2 == 0 ]
+    even = [num for num in numbers if even % 2 == 0 ]
     print(f"Even: {even}")
 
     dictionary = {num: num ** 2 for num in numbers}
