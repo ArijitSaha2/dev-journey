@@ -1,4 +1,4 @@
-# Exercise 55 — Collections & Iterators
+# Exercise 55 — Collections & Iterators + Revision
 
 # Write a function that accepts a list of student names and marks.
 # 1. Create a dictionary using the names as keys and marks as values.
