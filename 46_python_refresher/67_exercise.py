@@ -43,6 +43,5 @@ Types_of_messages = [mail, sms, pushnoty]
 def send_notification(notification, message):
     notification.send(message)
 
-
 for x in Types_of_messages:
     send_notification(x, "Hello! This is a notification")
