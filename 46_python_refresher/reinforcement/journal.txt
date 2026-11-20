@@ -1,0 +1,2 @@
+Today I learned Python.
+Tomorrow I will practise more.
